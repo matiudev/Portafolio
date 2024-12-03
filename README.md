@@ -28,7 +28,7 @@ portafolio/
 ├── styles.css
 ├── script.js
 └── img/
-    ├── ...
+    └── ...
 ```
 
 ## 🚀 Cómo Usar
