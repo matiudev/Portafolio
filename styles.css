@@ -1,0 +1,594 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+:root {
+    --fondo: #1f2123;
+    --color-text: #f1f1f1;
+    --gradiente: linear-gradient(-45deg, #543664, #8350a0);
+}
+
+body {
+    color: var(--color-text);
+    background-color: var(--fondo);
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    padding: 30px 550px 100px 550px;
+    background: linear-gradient(180deg, rgba(1,4,21,1) 15%, rgba(17,20,41,1) 100%);
+
+
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    right: 0;
+    
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgba(3, 6, 23, 0.329);
+}
+
+nav ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: inherit;
+    backdrop-filter: blur(5px);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+nav ul li {
+    list-style: none;
+    filter: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: azure;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    color: #76a9d8;
+}
+
+main {
+    padding-top: 120px;
+}
+
+.presentacion-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.presentacion-nombre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.presentacion-nombre h1 {
+    font-size: 50px;
+    margin: 5px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.icono-presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono-presentacion i {
+    font-size: 30px;
+}
+
+p {
+    font-weight: 500;
+}
+
+.resaltado-presentacion {
+    color: rgb(118, 169, 216);
+}
+
+.resaltado-presentacion2 {
+    color: rgb(250, 186, 239);
+}
+
+.presentacion-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.presentacion-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icono-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono-social i {
+    font-size: 30px;
+}
+
+.presentacion-social h2 {
+    font-size: 35px;
+    margin: 5px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* SOCIAL */
+
+.div_botones_sociales {
+    margin-top: 30px;
+}
+
+.div_botones_sociales button {
+    margin-right: 20px;
+}
+
+.div_botones_sociales button:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    border: 2px rgb(255, 255, 255) solid
+}
+
+.botones-sociales {
+    background-color: rgb(12, 18, 36);
+    border-radius: 15px;
+    border: 2px rgb(39, 46, 64) solid;
+    padding: 20px 30px;
+}
+
+.botones-sociales i {
+    font-size: 20px;
+}
+
+.botones-sociales span {
+    color: white;
+    font-size: 15px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+}
+
+/* EMAIL */
+
+.email-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email-info {
+    margin-top: 20px;
+    background-color: rgb(12, 18, 36); /* Color de fondo ajustado */
+    border: 2px rgb(39, 46, 64) solid;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-right: 10px; /* Añadido un margen derecho para separar los botones */
+    flex: 1; /* Para que el contenedor ocupe todo el espacio disponible */
+}
+
+.email-info p {
+    margin: 0;
+    color: white;
+}
+
+.action-buttons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.action-button {
+    background-color: #c3d7e2;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #a7bccb;
+}
+
+/* TITULOS PROYECTOS */
+
+.main_section-proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 100px;
+}
+
+
+.titulo-proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.icono-estrella {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.icono-estrella i {
+    font-size: 30px;
+}
+
+.titulo-proyectos h2 {
+    font-size: 35px;
+    margin: 5px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* PROYECTOS */
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.proyecto-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.proyecto-titulo h3 {
+    color: #f8a6cf;
+    font-size: 30px;
+    margin: 5px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.proyecto-titulo button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.proyecto-titulo button:hover {
+    transform: scale(1.07);
+    transition: 0.2s;
+}
+
+
+.span-button_proyectos {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.proyecto1 p  {
+    color: #d1d2d6;
+}
+
+.proyecto-img {
+    width: auto;
+    height: auto;
+}
+
+.proyecto-img:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.proyecto-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* BOTONES PROYECTOS */
+
+.botones-code i {
+    color: rgb(0, 0, 0);
+}
+
+.botones-code:hover {
+    background-color: #f8a6cf;
+}
+
+
+.div-botones {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.botones-proyectos1 {
+    width: 70px;
+    height: 30px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: rgb(255, 123, 0, 0.3)
+}
+
+.botones-proyectos2 {
+    width: 70px;
+    height: 30px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: rgba(9, 24, 223, 0.3)
+}
+
+.botones-proyectos3 {
+    width: 70px;
+    height: 30px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: rgba(245, 171, 11, 0.3)
+}
+
+.textos-botones {
+    color: white;
+    font-size: 14px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+}
+
+/* Proyecto 2 */
+
+.botones-proyectos4 {
+    width: 80px;
+    height: 30px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: rgba(16, 107, 211, 0.3)
+}
+
+.botones-proyectos5{
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: rgb(13, 33, 84)
+}
+
+.imagen-tailwind {
+    width: 20%;
+}
+
+
+/* HABILIDADES */
+
+.main_section-habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 100px;
+}
+
+
+.titulo-habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.icono-code {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.icono-code i {
+    font-size: 30px;
+}
+
+.titulo-habilidades h2 {
+    font-size: 35px;
+    margin: 5px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.div_botones_habilidades {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botones-habilidades {
+    background-color: rgb(12, 18, 36);
+    border-radius: 15px;
+    border: 2px rgb(39, 46, 64) solid;
+    padding: 15px 40px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones-habilidades i {
+    font-size: 20px;
+}
+
+.botones-habilidades span {
+    color: white;
+    font-size: 15px;
+    font-family:sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.div-botones-habilidades img {
+    width: 20px;
+    height: 20px;
+}
+
+#botones-habilidades1:hover {
+    border: 2px #e14f23 solid;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+#botones-habilidades2:hover {
+    border: 2px #2749e0 solid;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+#botones-habilidades3:hover {
+    border: 2px #dbf111 solid;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+#botones-habilidades4:hover {
+    border: 2px #2b79ee solid;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+#botones-habilidades5:hover {
+    border: 2px #6723c0 solid;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width:1500px) {
+    body {
+        padding: 20px 400px 80px 400px;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 20px 60px 80px 60px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 15px 80px 15px;
+    }
+
+    nav ul {
+        padding: 10px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav ul::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: inherit;
+        backdrop-filter: blur(5px);
+        border-radius: inherit;
+        z-index: -1;
+    }
+
+    nav ul li::before {
+        border-radius: 10px;
+        padding: 0px 80px;
+    }
+
+    .div-botones-sociales {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .div-botones-habilidades {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .botones-habilidades {
+        margin-right: 0;
+    }
+
+    .parent {
+        gap: 50px;
+    }
+
+    .email-container {
+        margin-right: 80px;
+    }
+
+    .email-info {
+        margin-top: 20px;
+        background-color: rgb(12, 18, 36); /* Color de fondo ajustado */
+        border: 2px rgb(39, 46, 64) solid;
+        border-radius: 15px;
+        padding: 10px 10px;
+    }
+    
+    #correo {
+        font-weight: 300;
+    }
+}
+
+
