@@ -379,7 +379,7 @@ p {
 /* Proyecto 2 */
 
 .botones-proyectos4 {
-    width: 80px;
+    width: auto;
     height: 30px;
     border-radius: 8px;
     border-style: none;
